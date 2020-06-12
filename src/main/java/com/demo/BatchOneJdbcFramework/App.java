@@ -16,7 +16,7 @@ public class App {
 
 		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-		Employee emp = context.getBean(Employee.class);
+		EmployeeOperations emp = context.getBean(EmployeeOperations.class);
 		emp.modifyEmployee();
 
 		// JdbcTemplate template = (JdbcTemplate)context.getBean("jdbcTemplate");
